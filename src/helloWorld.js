@@ -1,0 +1,1 @@
+const welcomeString = "Hello World!"
