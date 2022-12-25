@@ -10,6 +10,8 @@ import {
   logOut,
   submit
 } from './actions/index'
+import GetDataFromComponent from './component/GetDataComponent';
+import DisplayDataComponent from './component/DisplayDataComponent';
 
 
 //dispatch, state-> counter and auth to display in JSX, actions
@@ -46,6 +48,10 @@ function App() {
       {auth ? (<div>
         <p>If you know 50% of Redux, you're a pro!!</p>
         </div>) : ("")}
+
+      <h1>Data retrieval</h1>
+      <GetDataFromComponent />
+      <DisplayDataComponent />
     </div>
   );
 }

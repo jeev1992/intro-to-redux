@@ -34,3 +34,10 @@ export const submit = (data) => {
         payload: data
     }
 }
+
+export function addDataToStore(data){
+    return {
+        type: "ADD_DATA_TO_STORE",
+        payload: data
+    }
+}
